@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.header-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Style for the user greeting */
+.user-greeting {
+  font-weight: bold;
+  margin-right: 10px;
+}

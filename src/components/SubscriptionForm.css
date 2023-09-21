@@ -1,0 +1,22 @@
+.subscription-form-container {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .subscription-form {
+    text-align: center;
+  }
+  
+  .form-title {
+    margin: 0;
+    margin-right: 10px; 
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  

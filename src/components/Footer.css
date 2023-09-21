@@ -1,0 +1,50 @@
+
+
+.footer {
+  background-color: teal;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between; /* Spread columns evenly */
+  flex-wrap: wrap; /* Wrap columns if they exceed container width */
+  gap: 20px; /* Add some spacing between columns */
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 30%; /* Limit the width of each column */
+  padding: 0 200px; /* Add padding to columns */
+}
+
+.footer h2 {
+  font-size: 28px; /* Increase the font size */
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+  font-size: 18px; /* Increase the font size */
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px; /* Increase the font size */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none; /* Remove underline from links */
+  }

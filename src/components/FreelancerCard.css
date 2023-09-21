@@ -1,0 +1,43 @@
+.freelancer-cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.freelancer-cards .card {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.freelancer-card img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.freelancer-cards h2 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.freelancer-title {
+  font-size: 60px;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 70px;
+}
+
+.see-more-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.see-more-button {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 20px 40px;
+  font-size: 25px;
+  background-color: grey;
+  color: black;
+  border-radius: 30px;
+  cursor: pointer;
+}
