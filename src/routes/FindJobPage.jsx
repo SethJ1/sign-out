@@ -3,6 +3,7 @@ import JobDescription from '../components/JobDescription';
 import ProjectConditions from '../components/ProjectConditions';
 import Experience from '../components/Experience';
 import { createJobInFirebase, uploadImageAndGetURL } from '../Utils/firebase';
+import StripeCheckout from 'react-stripe-checkout';
 
 import '../components/FindJob.css';
 
@@ -44,8 +45,8 @@ const FindJobPage = () => {
     }));
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async () => {
+
 
     try {
       let jobImage = '';
@@ -80,6 +81,8 @@ const FindJobPage = () => {
     }
   };
 
+
+
   return (
     <div className="App">
       <div className="section-title">New Job</div>
@@ -96,7 +99,15 @@ const FindJobPage = () => {
         <p>Upload Job Image:</p>
         <input type="file" accept="image/*" onChange={handleImageChange} />
       </div>
-      <button onClick={handleSubmit}>Post</button>
+      {jobType === 'employment' ? ( 
+        <StripeCheckout
+          token={handleSubmit}
+          stripeKey="pk_test_51NtgtIIhbYzhoEhzrUGEfTMhitjxLYF6zZFxrSVI2MB43GYWEHOaVcC0g9ZscaMTpjbA8Uhd4v03SNfsbhQ8F60r00amUiGsny"
+        />
+      ) : null}
+            {jobType === 'freelance' ? ( 
+        <button onClick={handleSubmit}>Post</button>
+      ) : null}
     </div>
   );
 };
